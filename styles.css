@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Nunito:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Cormorant+Garamond:wght@400;500;600&family=Great+Vibes&family=Noto+Naskh+Arabic:wght@400;600&family=Nunito:wght@300;400;600&display=swap');
 
 :root {
   --bg: #f7f2ed;
@@ -34,11 +34,46 @@ body {
 
 .hero {
   text-align: center;
+  background: url('assets/6.jpeg') center/cover no-repeat;
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.78) 0%, rgba(247, 242, 237, 0.9) 60%, rgba(239, 228, 218, 0.95) 100%);
+  z-index: 0;
 }
 
 .details {
   flex-direction: column;
   align-items: stretch;
+  background: url('assets/3.jpeg') center/cover no-repeat;
+}
+
+.details > :not(.grain) {
+  position: relative;
+  z-index: 2;
+}
+
+.details::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.78) 0%, rgba(247, 242, 237, 0.88) 45%, rgba(239, 228, 218, 0.94) 100%);
+  z-index: 0;
+}
+
+.details::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 32%;
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.55);
+  z-index: 0;
 }
 
 .grain {
@@ -47,6 +82,7 @@ body {
   background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="220" height="220" viewBox="0 0 220 220"><filter id="n"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch"/></filter><rect width="220" height="220" filter="url(%23n)" opacity="0.06"/></svg>');
   pointer-events: none;
   mix-blend-mode: multiply;
+  z-index: 1;
 }
 
 .card {
@@ -58,6 +94,11 @@ body {
   box-shadow: var(--shadow);
   backdrop-filter: blur(8px);
   animation: floatIn 0.9s ease-out;
+}
+
+.intro {
+  z-index: 2;
+  background: rgba(255, 255, 255, 0.74);
 }
 
 .kicker {
@@ -72,6 +113,39 @@ h1 {
   font-family: 'Cormorant Garamond', serif;
   font-size: clamp(2.8rem, 6vw, 4.6rem);
   margin: 0 0 12px;
+}
+
+.script {
+  font-family: 'Great Vibes', cursive;
+  font-size: clamp(2.6rem, 7vw, 4.8rem);
+  font-weight: 400;
+}
+
+.caps {
+  font-family: 'Cinzel', serif;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  font-size: 0.85rem;
+}
+
+.arabic {
+  font-family: 'Noto Naskh Arabic', serif;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  direction: rtl;
+  text-align: center;
+  color: var(--ink);
+  margin: 10px 0;
+}
+
+.arabic.big {
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.arabic.small {
+  font-size: 1rem;
+  color: var(--muted);
 }
 
 .amp {
@@ -120,6 +194,12 @@ h1 {
   margin-top: 18px;
   font-size: 0.95rem;
   color: var(--muted);
+}
+
+.hero-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 
 .header {
