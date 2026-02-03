@@ -1,4 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Cormorant+Garamond:wght@400;500;600&family=Great+Vibes&family=Noto+Naskh+Arabic:wght@400;600&family=Nunito:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amiri+Quran&family=Cinzel:wght@400;600&family=Cormorant+Garamond:wght@400;500;600&family=Great+Vibes&family=Nunito:wght@300;400;600&display=swap');
+
+@font-face {
+  font-family: 'Uthmanic Hafs';
+  src: url('assets/fonts/UthmanicHafs1-Ver09.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Holy Type';
+  src: url('assets/fonts/HolyType.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
 
 :root {
   --bg: #f7f2ed;
@@ -126,10 +142,37 @@ h1 {
   text-transform: uppercase;
   letter-spacing: 0.15em;
   font-size: 0.85rem;
+  margin: 0;
 }
 
+.forever {
+  font-family: 'Holy Type', 'Great Vibes', cursive;
+  font-size: clamp(3.1rem, 7.5vw, 5.4rem);
+  font-weight: 400;
+  margin: -18px 0 4px;
+  line-height: 1.05;
+}
+
+.forever.new-line {
+  display: block;
+}
+
+.names-script {
+  font-family: 'Holy Type', 'Great Vibes', cursive;
+  font-size: clamp(5.2rem, 10vw, 8.8rem);
+  font-weight: 400;
+}
+
+.name-separator {
+  width: 72px;
+  height: 1px;
+  background: rgba(43, 36, 29, 0.4);
+  margin: 14px auto 18px;
+}
+
+
 .arabic {
-  font-family: 'Noto Naskh Arabic', serif;
+  font-family: 'Amiri Quran', serif;
   font-size: 1.1rem;
   line-height: 1.8;
   direction: rtl;
@@ -141,6 +184,13 @@ h1 {
 .arabic.big {
   font-size: 1.6rem;
   font-weight: 600;
+}
+
+.bismillah {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
 }
 
 .arabic.small {
