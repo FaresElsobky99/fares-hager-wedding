@@ -184,6 +184,16 @@ h1 {
   font-weight: 400;
 }
 
+.hero .names-script {
+  transform: translateY(-18px);
+}
+
+@media (max-width: 600px) {
+  .hero .names-script {
+    transform: translateY(-12px);
+  }
+}
+
 .name-separator {
   width: 72px;
   height: 1px;
@@ -322,12 +332,12 @@ h1 {
 }
 
 .panel.lift-up {
-  transform: translateY(-24px);
+  transform: translateY(-44px);
 }
 
 @media (max-width: 600px) {
   .panel.lift-up {
-    transform: translateY(-16px);
+    transform: translateY(-36px);
   }
 }
 
