@@ -185,12 +185,12 @@ h1 {
 }
 
 .hero .names-script {
-  transform: translateY(-64px);
+  transform: translateY(-44px);
 }
 
 @media (max-width: 600px) {
   .hero .names-script {
-    transform: translateY(-44px);
+    transform: translateY(-30px);
   }
 }
 
@@ -319,7 +319,7 @@ h1 {
 
 .grid {
   display: grid;
-  gap: 24px;
+  gap: 10px;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
 }
 
@@ -332,12 +332,12 @@ h1 {
 }
 
 .panel.lift-up {
-  transform: translateY(-176px);
+  transform: translateY(-196px);
 }
 
 @media (max-width: 600px) {
   .panel.lift-up {
-    transform: translateY(-140px);
+    transform: translateY(-156px);
   }
 }
 
