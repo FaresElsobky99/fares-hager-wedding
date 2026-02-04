@@ -50,21 +50,26 @@ body {
 
 .hero {
   text-align: center;
-  background: url('assets/6.jpeg') center/cover no-repeat;
+  background: url('assets/bg.pdf') center/cover no-repeat;
 }
 
 .hero::after {
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.78) 0%, rgba(247, 242, 237, 0.9) 60%, rgba(239, 228, 218, 0.95) 100%);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.18) 0%,
+    rgba(247, 242, 237, 0.32) 60%,
+    rgba(239, 228, 218, 0.48) 100%
+  );
   z-index: 0;
 }
 
 .details {
   flex-direction: column;
   align-items: stretch;
-  background: url('assets/3.jpeg') center/cover no-repeat;
+  background: url('assets/bg.pdf') center/cover no-repeat;
 }
 
 .details > :not(.grain) {
@@ -76,7 +81,12 @@ body {
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.78) 0%, rgba(247, 242, 237, 0.88) 45%, rgba(239, 228, 218, 0.94) 100%);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.18) 0%,
+    rgba(247, 242, 237, 0.32) 60%,
+    rgba(239, 228, 218, 0.48) 100%
+  );
   z-index: 0;
 }
 
@@ -87,8 +97,8 @@ body {
   right: 0;
   top: 0;
   height: 32%;
-  backdrop-filter: blur(10px);
-  background: rgba(255, 255, 255, 0.55);
+  backdrop-filter: none;
+  background: rgba(255, 255, 255, 0.2);
   z-index: 0;
 }
 
@@ -115,6 +125,10 @@ body {
 .intro {
   z-index: 2;
   background: transparent;
+}
+
+.hero .card {
+  backdrop-filter: none;
 }
 
 .kicker {
