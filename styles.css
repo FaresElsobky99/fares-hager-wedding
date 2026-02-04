@@ -185,12 +185,12 @@ h1 {
 }
 
 .hero .names-script {
-  transform: translateY(-18px);
+  transform: translateY(-64px);
 }
 
 @media (max-width: 600px) {
   .hero .names-script {
-    transform: translateY(-12px);
+    transform: translateY(-44px);
   }
 }
 
@@ -332,12 +332,12 @@ h1 {
 }
 
 .panel.lift-up {
-  transform: translateY(-44px);
+  transform: translateY(-176px);
 }
 
 @media (max-width: 600px) {
   .panel.lift-up {
-    transform: translateY(-36px);
+    transform: translateY(-140px);
   }
 }
 
