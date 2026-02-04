@@ -147,9 +147,9 @@ h1 {
 
 .forever {
   font-family: 'Holy Type', 'Great Vibes', cursive;
-  font-size: clamp(3.1rem, 7.5vw, 5.4rem);
+  font-size: clamp(9.3rem, 22.5vw, 16.2rem);
   font-weight: 400;
-  margin: -18px 0 4px;
+  margin: -162px 0 4px;
   line-height: 1.05;
 }
 
