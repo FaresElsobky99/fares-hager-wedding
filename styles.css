@@ -332,12 +332,12 @@ h1 {
 }
 
 .panel.lift-up {
-  transform: translateY(-196px);
+  margin-top: -116px;
 }
 
 @media (max-width: 600px) {
   .panel.lift-up {
-    transform: translateY(-156px);
+    margin-top: -76px;
   }
 }
 
