@@ -19,7 +19,7 @@
 :root {
   --bg: #f7f2ed;
   --bg-deep: #efe4da;
-  --ink: #2b241d;
+  --ink: #5C3120;
   --muted: #6c5c50;
   --accent: #c76d4d;
   --accent-soft: rgba(199, 109, 77, 0.15);
@@ -274,12 +274,12 @@ h1 {
 }
 
 .intro-text {
-  transform: translateY(-176px);
+  transform: translateY(-88px);
 }
 
 @media (max-width: 600px) {
   .intro-text {
-    transform: translateY(-112px);
+    transform: translateY(-56px);
   }
 }
 
@@ -319,6 +319,16 @@ h1 {
   border-radius: 0;
   box-shadow: none;
   animation: fadeUp 0.9s ease-out both;
+}
+
+.panel.lift-up {
+  transform: translateY(-24px);
+}
+
+@media (max-width: 600px) {
+  .panel.lift-up {
+    transform: translateY(-16px);
+  }
 }
 
 .panel:nth-child(2) {
