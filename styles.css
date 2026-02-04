@@ -273,6 +273,26 @@ h1 {
   gap: 12px;
 }
 
+.intro-text {
+  transform: translateY(-176px);
+}
+
+@media (max-width: 600px) {
+  .intro-text {
+    transform: translateY(-112px);
+  }
+}
+
+.cta-block {
+  transform: translateY(88px);
+}
+
+@media (max-width: 600px) {
+  .cta-block {
+    transform: translateY(56px);
+  }
+}
+
 .header {
   display: flex;
   align-items: center;
