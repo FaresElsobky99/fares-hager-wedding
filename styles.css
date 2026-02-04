@@ -153,6 +153,13 @@ h1 {
   line-height: 1.05;
 }
 
+@media (max-width: 600px) {
+  .forever {
+    font-size: clamp(5.2rem, 18vw, 9.5rem);
+    margin: -36px 0 8px;
+  }
+}
+
 .forever.new-line {
   display: block;
 }
