@@ -332,12 +332,12 @@ h1 {
 }
 
 .panel.lift-up {
-  margin-top: -116px;
+  margin-top: 0;
 }
 
 @media (max-width: 600px) {
   .panel.lift-up {
-    margin-top: -76px;
+    margin-top: 0;
   }
 }
 
